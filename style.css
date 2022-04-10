@@ -1,0 +1,218 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+.navbar {
+    background-color: hsla(120, 60%, 70%, 0.1);
+}
+body {
+	line-height: 1;
+    font-family: 'Roboto', sans-serif !important;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.logo {
+    height: 300px;
+}
+.container {
+    display:flex;
+    justify-content: center;
+}
+#carouselExampleIndicators {
+    flex-basis: 60%;
+}
+.seach-warraper {
+    margin-top: 20px;
+    justify-content: center;
+}
+i {
+    margin-right: 5px;
+}
+.navbar ul li  {
+    display:inline-block;
+}
+
+.navbar ul li a {
+    font-family: 'Open Sans', arial, sans-serif;
+    font-size: 20px;
+    position: relative;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    margin:10px 5px;
+}
+.navbar ul li a:hover {
+    color: orange;
+}
+.dropdown {
+    display: none;
+}
+.navbar ul li a:after {
+   
+    content: '';
+    background-color: #4db2ec;
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    transition: width 0.5s;
+    margin: 0 auto;
+   
+}
+.search {
+    width:100px;
+    height:38px;
+}
+.seachWarraper {
+    margin: 20px auto -10px 300px;
+}
+.navbar ul li:hover a::after{
+    content: '';
+    background-color: #4db2ec;
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+   
+}
+.navbar {
+    height:200px;
+    box-sizing: border-box;
+}
+.mail-warrap {
+    position: relative;
+}
+.mail,.phone {
+    margin-right: -200px !important;
+    font-style: italic;
+    font-weight: bold;
+}
+.address {
+    font-style: italic;
+    font-weight: bold;
+}
+.logoVN {
+    top:-4px;
+    position: absolute;
+    right:-40px;
+    height:30px;
+    width:80px;
+    float: right;
+    vertical-align: middle;
+}
+img {
+    height:500px;
+}
+.search-mobile {
+    display: none !important;
+}
+#form1 {
+    display: flex;
+    justify-content: content;
+    border: 1px solid rgba(0,0,255,0.4);
+    background-color: whitesmoke;
+}
+
+@media only screen and (max-width: 500px) { 
+    .navbar {
+        height:120px;
+    }
+    .mail-warrap{
+        margin-top: -100px;
+    }
+    .warrap-navbar {
+        margin-left: 25px;
+        margin-top: -80px;
+
+    }
+    .warrap-navbar li{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .warrap-navbar li a{
+        font-size: 15px !important;
+    }
+    .logoVN {
+        position: absolute;
+        right:-20px;
+        top:-2px;
+        height:30px;
+        width:60px;
+        float: right;
+        vertical-align: middle;
+    }
+    .navbar ul li {
+        margin-top:10px;
+    }
+}
+ @media screen and (max-width: 400px) {
+    .mail, .phone, .address {
+        margin-right: auto !important;
+        flex-basis: 100%;
+    }
+  
+    .dropdown {
+        display: block;
+    }
+    .menu {
+        display: none !important;
+    }
+    #carouselExampleIndicators {
+        flex-basis: 100%;
+    }
+    #carouselExampleIndicators img {
+        height: 200px !important;
+    }
+    .mail-warrap {
+        display: none !important;
+    }
+    .navbar {
+        height:auto !important;
+    }
+    .logo {
+        width:100% !important;
+        height:235px !important;
+    }
+    .search-mobile {
+        display: block !important;
+    }
+  }
