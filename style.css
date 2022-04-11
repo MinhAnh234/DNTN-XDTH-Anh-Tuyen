@@ -172,7 +172,7 @@ i {
     vertical-align: middle;
 }
 img {
-    max-height:450px;
+    max-height:480px;
 }
 .search-mobile {
     display: none !important;
@@ -217,6 +217,40 @@ img {
     }
 }
  @media screen and (max-width: 400px) {
+    .mail, .phone, .address {
+        margin-right: auto !important;
+        flex-basis: 100%;
+    }
+  
+    .dropdown {
+        display: block;
+    }
+    .menu {
+        display: none !important;
+    }
+    #carouselExampleIndicators {
+        flex-basis: 100%;
+    }
+    #carouselExampleIndicators img {
+        height: 200px !important;
+    }
+    .mail-warrap {
+        display: none !important;
+    }
+    .navbar {
+        height:auto !important;
+    }
+    .logo {
+        width: 144px;
+        height: 144px !important;
+        margin: 10px auto;
+        display:block;
+    }
+    .search-mobile {
+        display: block !important;
+    }
+  }
+  @media screen and (max-width: 420px) {
     .mail, .phone, .address {
         margin-right: auto !important;
         flex-basis: 100%;
