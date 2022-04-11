@@ -147,7 +147,7 @@ i {
    
 }
 .navbar {
-    height:220px;
+    height:250px;
     box-sizing: border-box;
 }
 .mail-warrap {
@@ -172,7 +172,7 @@ i {
     vertical-align: middle;
 }
 img {
-    max-height:500px;
+    max-height:450px;
 }
 .search-mobile {
     display: none !important;
