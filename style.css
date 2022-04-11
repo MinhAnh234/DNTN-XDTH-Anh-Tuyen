@@ -62,10 +62,32 @@ table {
 i {
     margin-right: 5px;
 }
+.hidden {
+    opacity:0;
+  }
+  .console-container {
+   display: block;
+    font-family:'Roboto';
+    font-size:20px;
+    text-align:center;
+    height:50px;
+    width:100px;
+    display:block;
+    color:white;
+    line-height: 50px;
+  }
+  .console-underscore {
+     display:inline-block;
+    position:relative;
+    top:-0.14em;
+    left:10px;
+  }
 .navbar ul li  {
     display:inline-block;
 }
-
+.bg-pri {
+    background-color: #1b2a49!important;
+}
 .navbar ul li a {
     font-family: 'Open Sans', arial, sans-serif;
     font-size: 20px;
@@ -209,8 +231,10 @@ img {
         height:auto !important;
     }
     .logo {
-        width:100% !important;
-        height:235px !important;
+        width: 144px;
+        height: 144px !important;
+        margin: 10px auto;
+        display:block;
     }
     .search-mobile {
         display: block !important;
