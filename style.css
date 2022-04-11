@@ -57,6 +57,7 @@ table {
 }
 .seach-warraper {
     margin-top: 20px;
+    margin-bottom: 20px;
     justify-content: center;
 }
 i {
@@ -117,6 +118,15 @@ i {
     margin: 0 auto;
    
 }
+.service {
+    color: bisque;
+    height:50px;
+    line-height:50px;
+    font-size: 18px;
+    background-color: #1b2a49;
+    width:250px !important;
+    border-radius: 10px;
+}
 .search {
     width:100px;
     height:38px;
@@ -137,7 +147,7 @@ i {
    
 }
 .navbar {
-    height:200px;
+    height:220px;
     box-sizing: border-box;
 }
 .mail-warrap {
@@ -162,7 +172,7 @@ i {
     vertical-align: middle;
 }
 img {
-    height:500px;
+    max-height:500px;
 }
 .search-mobile {
     display: none !important;
